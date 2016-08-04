@@ -1,0 +1,16 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+repositories {
+	jcenter()
+}
+
+// In this section you declare the dependencies for your production and test code
+dependencies {
+	compile 'org.slf4j:slf4j-api:1.7.21'
+	compile 'com.google.api-client:google-api-client:1.22.0'
+	compile 'com.google.oauth-client:google-oauth-client-jetty:1.22.0'
+	compile 'com.google.apis:google-api-services-sheets:v4-rev14-1.22.0'
+
+	testCompile 'junit:junit:4.12'
+}
